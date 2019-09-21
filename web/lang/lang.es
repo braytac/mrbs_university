@@ -219,7 +219,7 @@ $vocab["users.password"]      = "Contraseña";
 $vocab["users.level"]         = "Privilegios";
 //$vocab["unknown_user"]       = "Usuario Anónimo";
 $vocab["unknown_user"]       = "";
-$vocab["login"]              = "Entrar";
+$vocab["login"]              = "Ingresar";
 $vocab["logoff"]             = "Salir";
 
 // Database upgrade code
