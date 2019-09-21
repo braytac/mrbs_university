@@ -92,7 +92,7 @@ $db_persist = false;
  * Site identification information
  *********************************/
 $mrbs_admin = "Administrador";
-$mrbs_admin_email = "stdecanato@ing.unlp.edu.ar";
+$mrbs_admin_email = "admin@bla.com";
 // NOTE:  there are more email addresses in $mail_settings below.    You can also give
 // email addresses in the format 'Full Name <address>', for example:
 // $mrbs_admin_email = 'Booking System <admin_email@your.org>';
