@@ -168,8 +168,9 @@ function print_userlist_link()
 {
   global $auth;
   
-  if ($auth['type'] == 'db')
+  if ($auth['type'] == 'db' && isset($_SESSION['UserName']))
   {
-    echo "<a id=\"user_list_link\" href=\"edit_users.php\">" . get_vocab('user_list') . "</a>\n";
+    echo "<a title=\"Lista de usuarios\" style=\"display: inline;\" id=\"user_list_link\" href=\"edit_users.php\"><img height=\"28\"src=\"/intranet/imagenes/planta.png\"/></a>\n";
+//    echo "<a id=\"user_list_link\" href=\"edit_users.php\">" . get_vocab('user_list') . "</a>\n";
   }
 }

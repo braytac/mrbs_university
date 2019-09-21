@@ -397,7 +397,7 @@ if ($is_admin || !empty($enabled_areas))
         }
         // ignore these columns, either because we don't want to display them,
         // or because we have already displayed them in the header column
-        $ignore = array('id', 'area_id', 'room_name', 'disabled', 'sort_key', 'custom_html');
+        $ignore = array('id', 'room_admin_email','area_id', 'room_name', 'disabled', 'sort_key');
         foreach($fields as $field)
         {
           if (!in_array($field['name'], $ignore))
@@ -405,6 +405,10 @@ if ($is_admin || !empty($enabled_areas))
             switch ($field['name'])
             {
               // the standard MRBS fields
+//                 $text = $field['name'];
+              case 'custom_html':
+                $text = "Imagen";
+                break;
               case 'description':
               case 'capacity':
               case 'room_admin_email':
@@ -458,8 +462,13 @@ if ($is_admin || !empty($enabled_areas))
               {
                 switch ($field['name'])
                 {
+                  case 'custom_html':
+                    echo "<td class=\"td_img\"><div>" . $r[$field['name']] . "</div></td>\n";
+                    break;
                   // the standard MRBS fields
                   case 'description':
+                    // echo "<td><div>" . $r[$field['name']] . "</div></td>\n";
+                    //break;
                   case 'room_admin_email':
                     echo "<td><div>" . htmlspecialchars($r[$field['name']]) . "</div></td>\n";
                     break;

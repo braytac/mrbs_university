@@ -977,7 +977,8 @@ form#add_new_user {margin-left: 1em}
 .banner {
   height: 100%;
   width: 100%;
-  background-color: <?php echo $banner_back_color ?>;
+/*  background-color: <?php echo $banner_back_color ?>;*/
+background: linear-gradient(to bottom, #458cc6 0%,#0062b2 100%);
   color: <?php echo $banner_font_color ?>;
   border-color: <?php echo $banner_border_color ?>;
   border-width: <?php echo $banner_border_width ?>px;
@@ -1030,7 +1031,7 @@ form#add_new_user {margin-left: 1em}
 }
 
 #logon_box a {
-  display: block;
+  display: inline;
   width: 100%;
   padding-top: 0.3em;
   padding-bottom: 0.3em;
@@ -1472,3 +1473,12 @@ a.dt-button {
 div#check_tabs {background-image: none}
 .edit_entry #ui-tab-dialog-close {position:absolute; right:0; top:23px}
 .edit_entry #ui-tab-dialog-close a {float:none; padding:0}
+li#logon_box form{
+display: inline;
+}
+li#logon_box img{
+padding-left: 4px;
+padding-bottom: 6px;
+vertical-align: middle;
+}
+

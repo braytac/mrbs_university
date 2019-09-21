@@ -34,7 +34,21 @@ function print_head($simple=false)
   {
     require_once "js.inc";
   }
-  
+?>
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="magnific-popup/dist/magnific-popup.css">
+
+<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
+
+<!-- Magnific Popup core JS file -->
+<script src="magnific-popup/dist/jquery.magnific-popup.js"></script>
+<script>
+$(document).ready(function() {
+  $('#rooms_table a.mgi').magnificPopup({type:'image'});
+});
+</script>
+<?php  
   echo "</head>\n";
 }
 
@@ -64,23 +78,25 @@ function print_header_site_info()
     // Suppress error messages in case the logo is a URL and allow_url_fopen
     // is not enabled in php.ini
     $logo_size = @getimagesize($mrbs_company_logo);
-    echo "<img src=\"$mrbs_company_logo\" " . $logo_size[3] . " alt=\"$mrbs_company\">\n";
+    echo "<img src=\"$mrbs_company_logo\" style=\"vertical-align: middle;\" height=\"50\" alt=\"$mrbs_company\">\n";
+    echo "<a href=\"https://www.ing.unlp.edu.ar/sitio/aulas\">&nbsp;&nbsp;&nbsp;&nbsp;".get_vocab("mrbs")."</a>";
   }
   if (!empty($mrbs_company_url))
   {
     echo "</a>\n";
   }
   echo "</div>\n";
-    
+/*    
   if (!empty($mrbs_company_more_info))
   {
     echo "<div id=\"more_info\">$mrbs_company_more_info</div>\n";
   }
 
+
   echo "<div class=\"mrbs\">\n";
   echo "<a href=\"index.php\">" . get_vocab("mrbs") . "</a>\n";
   echo "</div>\n";
-  
+*/ 
   echo "</div>\n";
 }
 
@@ -218,19 +234,19 @@ function print_nav($day, $month, $year, $area, $room, $search_str=null, $simple=
     echo "<li>\n";
     print_goto_date($day, $month, $year, $area, $room);
     echo "</li>\n";
-    
+/*    
     echo "<li>\n";
     print_help($query_string);
     echo "</li>\n";
-    
+*/    
     echo "<li>\n";
     print_rooms($query_string);
     echo "</li>\n";
-    
+/*    
     echo "<li>\n";
     print_report($query_string);
     echo "</li>\n";
-    
+*/    
     echo "<li>\n";
     print_search($day, $month, $year, $area, $room, $search_str);
     echo "</li>\n";

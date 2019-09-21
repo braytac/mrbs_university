@@ -476,7 +476,9 @@ if ($approval_enabled && !$room_disabled && $awaiting_approval)
 
 ?>
 </table>
-
+<?php
+if (isset($_SESSION['UserName'])) { 
+?>
 <div id="view_entry_nav">
   <?php
   // Only show the links for Edit and Delete if the room is enabled.    We're
@@ -610,7 +612,8 @@ if ($approval_enabled && !$room_disabled && $awaiting_approval)
     echo "</div>\n";
   }
 echo "</div>\n";
-
+}
+// FIN si usuario con sesion => muestro botoncitos
 if (isset($HTTP_REFERER)) //remove the link if displayed from an email
 {
   echo "<div id=\"returl\">\n";

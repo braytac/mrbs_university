@@ -91,8 +91,8 @@ $db_persist = false;
 /*********************************
  * Site identification information
  *********************************/
-$mrbs_admin = "Your Administrator";
-$mrbs_admin_email = "admin_email@your.org";
+$mrbs_admin = "Administrador";
+$mrbs_admin_email = "stdecanato@ing.unlp.edu.ar";
 // NOTE:  there are more email addresses in $mail_settings below.    You can also give
 // email addresses in the format 'Full Name <address>', for example:
 // $mrbs_admin_email = 'Booking System <admin_email@your.org>';
@@ -103,10 +103,11 @@ $mrbs_admin_email = "admin_email@your.org";
 // The company name is mandatory.   It is used in the header and also for email notifications.
 // The company logo, additional information and URL are all optional.
 
-$mrbs_company = "Your Company";   // This line must always be uncommented ($mrbs_company is used in various places)
+$mrbs_company = "Facultad de Ingeniería - UNLP";   // This line must always be uncommented ($mrbs_company is used in various places)
 
 // Uncomment this next line to use a logo instead of text for your organisation in the header
-//$mrbs_company_logo = "your_logo.gif";    // name of your logo file.   This example assumes it is in the MRBS directory
+$mrbs_company_logo = "/catedras/template/imagenes/logo_Fi.png";    
+// name of your logo file.   This example assumes it is in the MRBS directory
 
 // Uncomment this next line for supplementary information after your company name or logo
 //$mrbs_company_more_info = "You can put additional information here";  // e.g. "XYZ Department"

@@ -9,8 +9,8 @@
 // This file is PHP code. Treat it as such.
 
 // Used in style.inc
-$vocab["mrbs"]               = "Sistema de Reservas de Salas y Aulas";
-
+//$vocab["mrbs"]               = "Sistema de Reservas de Aulas";
+$vocab["mrbs"]               = "Sistema de Gestión de Aulas";
 // Used in functions.inc
 $vocab["report"]             = "Informes";
 $vocab["admin"]              = "Administración";
@@ -21,7 +21,7 @@ $vocab["outstanding"]        = "Reservas pendientes";
 // Used in day.php
 $vocab["bookingsfor"]        = "Reservas para el";
 $vocab["bookingsforpost"]    = "";
-$vocab["areas"]              = "Agrupaciones";
+$vocab["areas"]              = "Departamentos";
 $vocab["daybefore"]          = "Día Anterior";
 $vocab["dayafter"]           = "Día Siguiente";
 $vocab["gototoday"]          = "Día Actual";
@@ -67,7 +67,7 @@ $vocab["years"]              = "Años";
 $vocab["period_lc"]          = "periodo";
 $vocab["periods"]            = "Periodos";
 $vocab["all_day"]            = "Día Completo";
-$vocab["area"]               = "Agrupación";
+$vocab["area"]               = "Departamento";
 $vocab["type"]               = "Tipo";
 $vocab["save"]               = "Guardar";
 $vocab["rep_type"]           = "Tipo Repetición";
@@ -94,7 +94,7 @@ $vocab["month_absolute"]     = "En el día";
 $vocab["month_relative"]     = "En el";
 $vocab["skip_conflicts"]     = "Omitir conflictos pasados";
 $vocab["no_mail"]            = "No enviar email";
-$vocab["ctrl_click"]         = "Usar Control-Click para seleccionar más de una Sala";
+$vocab["ctrl_click"]         = "Usar Control-Click para seleccionar más de un Aula";
 $vocab["entryid"]            = "ID de Entrada ";
 $vocab["repeat_id"]          = "ID de Repetición "; 
 $vocab["you_have_not_entered"] = "No ha introducido ningún";
@@ -113,7 +113,7 @@ $vocab["start_after_end_long"] = "Error: el día de comienzo es posterior al dí
 
 // Used in view_entry.php
 $vocab["description"]        = "Descripción";
-$vocab["room"]               = "Sala";
+$vocab["room"]               = "Aula";
 $vocab["createdby"]          = "Creada por";
 $vocab["modifiedby"]          = "Modificado por";
 $vocab["lastupdate"]         = "Última Actualización";
@@ -161,7 +161,7 @@ $vocab["returncal"]          = "Volver a Vista de Calendario";
 $vocab["failed_to_acquire"]  = "Error al obtener acceso a la Base de Datos"; 
 $vocab["invalid_booking"]    = "Reserva Incorrecta";
 $vocab["must_set_description"] = "Debes introducir una breve descripción para la Reserva. Por favor, vuelve atrás e introduce una.";
-$vocab["no_rooms_selected"]    = "Tiene que seleccionar una sala";
+$vocab["no_rooms_selected"]    = "Tiene que seleccionar un aula";
 $vocab["mail_subject_approved"]  = "Reserva aprobada para $mrbs_company";
 $vocab["mail_subject_rejected"]  = "Reserva rechazada para $mrbs_company";
 $vocab["mail_subject_more_info"] = "$mrbs_company: solicitud de más información";
@@ -196,11 +196,11 @@ $vocab["max_per_week_global"]     = "El número máximo de reservas por semana y
 $vocab["max_per_month_global"]    = "El número máximo de reservas por mes y por usuario en todo el sistema es";
 $vocab["max_per_year_global"]     = "El número máximo de reservas por año y por usuario en todo el sistema es";
 $vocab["max_per_future_global"]   = "El número máximo de reservas extraordinarias por usuario en todo el sistema es";
-$vocab["max_per_day_area"]        = "El número máximo de reservas por día y por usuario en este agrupamiento es";
-$vocab["max_per_week_area"]       = "El número máximo de reservas por semana y por usuario en este agrupamiento es";
-$vocab["max_per_month_area"]      = "El número máximo de reservas por mes y por usuario en este agrupamiento es";
-$vocab["max_per_year_area"]       = "El número máximo de reservas por año y por usuario en este agrupamiento es";
-$vocab["max_per_future_area"]     = "El número máximo de reservas extraordinarias por usuario en este agrupamiento es";
+$vocab["max_per_day_area"]        = "El número máximo de reservas por día y por usuario en este departamento es";
+$vocab["max_per_week_area"]       = "El número máximo de reservas por semana y por usuario en este departamento es";
+$vocab["max_per_month_area"]      = "El número máximo de reservas por mes y por usuario en este departamento es";
+$vocab["max_per_year_area"]       = "El número máximo de reservas por año y por usuario en este departamento es";
+$vocab["max_per_future_area"]     = "El número máximo de reservas extraordinarias por usuario en este departamento es";
 $vocab["skip_and_book"]           = "Ignorar y reservar";
 $vocab["skip_and_book_note"]      = "Adelante con la reserva, ignorando las entradas en conflicto";
 $vocab["changes_saved"]           = "Cambios guardados";
@@ -217,7 +217,8 @@ $vocab["please_login"]       = "Introduzca su Nombre de Usuario";
 $vocab["users.name"]          = "Nombre";
 $vocab["users.password"]      = "Contraseña";
 $vocab["users.level"]         = "Privilegios";
-$vocab["unknown_user"]       = "Usuario Anónimo";
+//$vocab["unknown_user"]       = "Usuario Anónimo";
+$vocab["unknown_user"]       = "";
 $vocab["login"]              = "Entrar";
 $vocab["logoff"]             = "Salir";
 
@@ -284,8 +285,8 @@ $vocab["from"]               = "Desde";
 $vocab["report_on"]          = "Informe de Reuniones";
 $vocab["report_start"]       = "Fecha Inicio";
 $vocab["report_end"]         = "Fecha Fin";
-$vocab["match_area"]         = "Agrupación";
-$vocab["match_room"]         = "Sala";
+$vocab["match_area"]         = "Departamento";
+$vocab["match_room"]         = "Aula";
 $vocab["match_type"]         = "Tipo de Coincidencia";
 $vocab["ctrl_click_type"]    = "Use Control-Click para seleccionar más de un Tipo";
 $vocab["match_entry"]        = "Descripción Breve";
@@ -311,7 +312,7 @@ $vocab["total"]              = "Total";
 $vocab["submitquery"]        = "Pedir Informe";
 $vocab["sort_rep"]           = "Ordenar Informe por";
 $vocab["sort_rep_time"]      = "Fecha/Hora de Comienzo";
-$vocab["sort_room"]             = "Sala";
+$vocab["sort_room"]             = "Aula";
 $vocab["fulldescription_short"] = "Descripción completa";
 $vocab["both"]                  = "Todos";
 $vocab["with"]                  = "Con";
@@ -337,42 +338,42 @@ $vocab["monthafter"]         = "Ir a Mes Posterior";
 $vocab["gotothismonth"]      = "Ir a Mes Corriente";
 
 // Used in {day week month}.php
-$vocab["no_rooms_for_area"]  = "No hay Salas definidas para esta Agrupación";
+$vocab["no_rooms_for_area"]  = "No hay Aulas definidas para este departamento";
 
 // Used in admin.php
 $vocab["edit"]               = "Editar";
 $vocab["delete"]             = "Borrar";
-$vocab["rooms"]              = "Salas";
+$vocab["rooms"]              = "Aulas";
 $vocab["in"]                 = "en";
-$vocab["noareas"]            = "No hay Agrupaciones";
-$vocab["noareas_enabled"]    = "No hay Agrupaciones habilitadas.";
-$vocab["addarea"]            = "Agregar Agrupación";
+$vocab["noareas"]            = "No hay Departamentos";
+$vocab["noareas_enabled"]    = "No hay departamentos habilitadas.";
+$vocab["addarea"]            = "Agregar Departamento";
 $vocab["name"]               = "Nombre";
-$vocab["noarea"]             = "No se seleccionó Agrupación";
+$vocab["noarea"]             = "No se seleccionó Departamento";
 $vocab["browserlang"]        = "Su navegador está configurado para usar los siguientes juegos de caracteres";
-$vocab["addroom"]            = "Agregar Sala";
+$vocab["addroom"]            = "Agregar Aula";
 $vocab["capacity"]           = "Capacidad (Personas)";
-$vocab["norooms"]            = "No hay Salas.";
-$vocab["norooms_enabled"]    = "No hay Salas habilitadas.";
+$vocab["norooms"]            = "No hay Aulas.";
+$vocab["norooms_enabled"]    = "No hay Aulas habilitadas.";
 $vocab["administration"]     = "Administración";
-$vocab["invalid_area_name"]  = "Este nombre de Agrupación ya está siendo utilizado";
+$vocab["invalid_area_name"]  = "Este nombre de departamento ya está siendo utilizado";
 $vocab["empty_name"]         = "¡No se ha escrito un nombre!";
 
 // Used in edit_area.php and/or edit_room.php
-$vocab["editarea"]           = "Editar Agrupación";
+$vocab["editarea"]           = "Editar Departamento";
 $vocab["change"]             = "Cambiar";
 $vocab["backadmin"]          = "Volver a Admin";
-$vocab["editroom"]           = "Editar Sala";
-$vocab["viewroom"]                = "Ver Sala";
+$vocab["editroom"]           = "Editar Aula";
+$vocab["viewroom"]                = "Ver Aula";
 $vocab["not_found"]          = " no encontrado";
-$vocab["room_admin_email"]   = "Correo Electrónico del Administrador de Sala";
+$vocab["room_admin_email"]   = "Correo Electrónico del Administrador de Aula";
 $vocab["area_admin_email"]   = "Correo Electrónico del Administrador de Agrupación";
 $vocab["area_first_slot_start"]   = "Comienzo del primer periodo";
 $vocab["area_last_slot_start"]    = "Comienzo del último periodo";
 $vocab["area_res_mins"]           = "Duración (minutos)";
 $vocab["area_def_duration_mins"]  = "Duración por defecto (minutos)";
-$vocab["invalid_area"]            = "¡Agrupación inválida!";
-$vocab["invalid_room_name"]       = "¡Este nombre de Sala ya se ha usado en esta Agrupación!";
+$vocab["invalid_area"]            = "¡Departamento inválido!";
+$vocab["invalid_room_name"]       = "¡Este nombre de Aula ya se ha usado en este Departamento!";
 $vocab["invalid_email"]           = "¡Correo Electrónico Incorrecto!";
 $vocab["invalid_resolution"]      = "¡Combinación incorrecta de duración y periodos primero y último!";
 $vocab["too_many_slots"]          = '¡Es necesario aumentar el valor de $max_slots en el archivo de configuración!';
@@ -399,7 +400,7 @@ $vocab["treat_respect"]           = "Respetar el ajuste de privacidad de la rese
 $vocab["treat_private"]           = "Tratar todas las reservas como privadas, ignorando su ajuste de privacidad";
 $vocab["treat_public"]            = "Tratar todas las reservas como públicas, ignorando su ajuste de privacidad";
 $vocab["sort_key"]                = "Clave de ordenación";
-$vocab["sort_key_note"]           = "Esta es la clave utilizada para ordenar las salas";
+$vocab["sort_key_note"]           = "Esta es la clave utilizada para ordenar las aulas";
 $vocab["booking_policies"]        = "Política de reservas";
 $vocab["booking_creation"]        = "Creación de reserva";
 $vocab["booking_deletion"]        = "Borrado de reserva";
@@ -408,7 +409,7 @@ $vocab["booking_durations"]       = "Límites de la duración de las reservas";
 $vocab["max_duration"]            = "Duración máxima";
 $vocab["min_book_ahead"]          = "Reservas futuras - mínimo";
 $vocab["max_book_ahead"]          = "Reservas futuras - máximo";
-$vocab["this_area"]               = "Este agrupamiento";
+$vocab["this_area"]               = "Este departamento";
 $vocab["whole_system"]            = "Todo el sistema";
 $vocab["whole_system_note"]       = "Los valores para todo el sistema se definen en el archivo de configuración";
 $vocab["max_per_day"]             = "Número máximo por día";
@@ -425,10 +426,10 @@ $vocab["mode_times"]              = "Horas";
 $vocab["times_only"]              = "Solamente modo Horas";               
 $vocab["enabled"]                 = "Habilitada";
 $vocab["disabled"]                = "Deshabilitada";
-$vocab["disabled_area_note"]      = "Si esta Agrupación está deshabilitada, no aparecerá en las vistas de calendario " .
+$vocab["disabled_area_note"]      = "Si este departamento está deshabilitado, no aparecerá en las vistas de calendario " .
                                     "y no será posible hacer nuevas reservas en ella. Sin embargo, las reservas existentes " .
                                     "serán respetadas y por ello serán visibles en los resultados de Búsqueda e Informes.";
-$vocab["disabled_room_note"]      = "Si esta Sala está deshabilitada, no aparecerá en las vistas de calendario " .
+$vocab["disabled_room_note"]      = "Si esta Aula está deshabilitada, no aparecerá en las vistas de calendario " .
                                     "y no será posible hacer nuevas reservas en ella. Sin embargo, las reservas existentes " .
                                     "serán respetadas y por ello serán visibles en los resultados de Búsqueda e Informes.";
 $vocab["book_ahead_note_periods"] = "Cuando se usan periodos, las horas de reservas futuras se redondearán al día completo más cercano  .";
@@ -442,7 +443,7 @@ $vocab["deletefollowing"]    = "Esto borrará las siguientes Agendas";
 $vocab["sure"]               = "ESTÁ SEGURO?";
 $vocab["YES"]                = "SÍ";
 $vocab["NO"]                 = "NO";
-$vocab["delarea"]            = "Debe borrar todas las Salas antes de borrar esta Agrupación<p>";
+$vocab["delarea"]            = "Debe borrar todas las Aulas antes de borrar este Departamento<p>";
 
 // Used in help.php
 $vocab["about_mrbs"]         = "Acerca de MRBS";
@@ -454,7 +455,7 @@ $vocab["for_any_questions"]  = "para cualquier duda.";
 
 // Used in import.php
 $vocab["import_icalendar"]            = "Importar un archivo iCalendar";
-$vocab["area_room_settings"]          = "Agrupamientos y salas";
+$vocab["area_room_settings"]          = "Departamentos y Aulas";
 $vocab["other_settings"]              = "Otros ajustes";
 $vocab["import_intro"]                = "Este formulario permite importar a MRBS un archivo iCalendar " .
                                         "que cumpla con RFC 5545. Solamente podrán ser importados aquellos " .
@@ -473,27 +474,27 @@ $vocab["max_allowed_file_size"]       = "El tamaño máximo de archivo permitido
 $vocab["no_file"]                     = "No se ha subido el archivo";
 $vocab["could_not_process"]           = "Fallo de importación: no se ha podido procesar el archivo";
 $vocab["badly_formed_ics"]            = "Archivo VCALENDAR con formato incorrecto";
-$vocab["default_room"]                = "Sala por defecto";
-$vocab["default_room_note"]           = "La sala que se utilizará si no se ha especificado la propiedad LOCATION";
+$vocab["default_room"]                = "Aula por defecto";
+$vocab["default_room_note"]           = "El aula que se utilizará si no se ha especificado la propiedad LOCATION";
 $vocab["area_room_order"]             = "Órden";
-$vocab["area_room_order_note"]        = "El órden del agrupamiento y nombres de sala en la propiedad LOCATION";
-$vocab["area_room"]                   = "Agrupamiento-Sala";
-$vocab["room_area"]                   = "Sala-Agrupamiento";
+$vocab["area_room_order_note"]        = "El órden del departamento y nombres de aula en la propiedad LOCATION";
+$vocab["area_room"]                   = "Departamento-Aula";
+$vocab["room_area"]                   = "Aula-Departamento";
 $vocab["area_room_delimiter"]         = "Delimitador";
-$vocab["area_room_delimiter_note"]    = "La cadena que separa el nombre de agrupamiento y de sala, en la propiedad LOCATION. " .
-                                        "Si no se encuentra delimitador, MRBS buscará una sala que tenga el mismo " .
+$vocab["area_room_delimiter_note"]    = "La cadena que separa el nombre de departamento y de aula, en la propiedad LOCATION. " .
+                                        "Si no se encuentra delimitador, MRBS buscará un aula que tenga el mismo " .
                                         "nombre que el de LOCATION";
-$vocab["area_room_create"]            = "Crear salas si es necesario";
+$vocab["area_room_create"]            = "Crear aulas si es necesario";
 $vocab["default_type"]                = "Tipo por defecto";
-$vocab["room_does_not_exist_no_area"] = "la sala no existe y no puede añadirse - no se ha especificado agrupamiento";
-$vocab["room_not_unique_no_area"]     = "el nombre de la sala no es único. No se puede asignar sala en el agrupamiento.";
-$vocab["area_does_not_exist"]         = "El agrupamiento no existe:";
-$vocab["room_does_not_exist"]         = "La sala no existe:";
-$vocab["creating_new_area"]           = "Creando nuevo agrupamiento:";
-$vocab["creating_new_room"]           = "Creando nueva sala:";
-$vocab["could_not_create_area"]       = "No se pudo crear el agrupamiento";
-$vocab["could_not_create_room"]       = "No se pudo crear la sala";
-$vocab["could_not_find_room"]         = "No se pudo encontrar la sala";
+$vocab["room_does_not_exist_no_area"] = "el aula no existe y no puede añadirse - no se ha especificado departamento";
+$vocab["room_not_unique_no_area"]     = "el nombre de el aula no es único. No se puede asignar aula en el departamento.";
+$vocab["area_does_not_exist"]         = "El departamento no existe:";
+$vocab["room_does_not_exist"]         = "El aula no existe:";
+$vocab["creating_new_area"]           = "Creando nuevo departamento:";
+$vocab["creating_new_room"]           = "Creando nueva aula:";
+$vocab["could_not_create_area"]       = "No se pudo crear el departamento";
+$vocab["could_not_create_room"]       = "No se pudo crear el aula";
+$vocab["could_not_find_room"]         = "No se pudo encontrar el aula";
 $vocab["could_not_import"]            = "No se pudo importar";
 $vocab["no_LOCATION"]                 = "El VEVENT no incluyó la propiedad LOCATION";
 $vocab["invalid_RRULE"]               = "RRULE no válida: no incluye FREQ";
