@@ -69,7 +69,8 @@ $column_hidden_color            = $main_table_month_invalid_color;    // hidden 
 $calendar_hidden_color          = "#dae0e4";                          // hidden days in the mini-cals
 $row_even_color                 = "#ffffff";        // even rows in the day and week views
 $row_odd_color                  = "#f2f4f6";        // even rows in the day and week views
-$row_highlight_color            = "#ffc0da";        // used for highlighting a row
+/*$row_highlight_color            = "#ffc0da";        // used for highlighting a row*/
+$row_highlight_color            = "#1393FF";        // used for highlighting a row
 
 $help_highlight_color           = "#ffe6f0";        // highlighting text on the help page
 
@@ -77,16 +78,20 @@ $multiple_control_color         = "#ffff22";        // background colour for the
 
 // These are the colours used for distinguishing between the dfferent types of bookings in the main
 // displays in the day, week and month views
+/*
+    'E' => "#6dd9c4",
+    'I' => "#99cc66",
+*/
 $color_types = array(
     'A' => "#ffff99",
     'B' => "#99cccc",
     'C' => "#ffffcd",
     'D' => "#cde6e6",
-    'E' => "#6dd9c4",
+    'E' => "#FFAD48",
     'F' => "#82adad",
     'G' => "#ccffcc",
     'H' => "#d9d982",
-    'I' => "#99cc66",
+    'I' => "#64DBFF",
     'J' => "#e6ffe6"); 
 
 // colours used for pending.php and bookings awaiting approval

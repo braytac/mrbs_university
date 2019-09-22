@@ -389,11 +389,15 @@ table.dwm_main {
 // need padding put it on the contained element.
 ?>
 .dwm_main th {font-size: small; font-weight: normal; vertical-align: top; padding: 0;
+    padding-top: 3px;
+    padding-bottom: 3px;
     color: <?php echo $header_font_color ?>; 
     background-color: <?php echo $header_back_color ?>;
     border-left: <?php echo $main_table_cell_border_width ?>px solid <?php echo $main_table_header_border_color ?>}
 .dwm_main th.first_last, .dwm_main th span {padding: 0 2px}
-.dwm_main th:first-child {border-left: 0}
+.dwm_main th:first-child {border-left: 0;
+padding-top: 3px;  
+}
 
 .dwm_main a {
   display: block;
@@ -526,7 +530,10 @@ td.hidden_day     {background-color: <?php echo $column_hidden_color ?>; /* hidd
     ?>
     }
 tr.row_highlight td.new {background-color: <?php echo $row_highlight_color ?>} /* used for highlighting a row */
-.dwm_main td.row_labels     {background-color: <?php echo $main_table_labels_back_color ?>; white-space: nowrap}    /* used for the row labels column */
+.dwm_main td.row_labels     {
+ padding-top: 3px;
+ padding-bottom: 3px;
+ background-color: <?php echo $main_table_labels_back_color ?>; white-space: nowrap}    /* used for the row labels column */
 .row_labels a:link    {color: <?php echo $anchor_link_color_header ?>;    text-decoration: none; font-weight: normal}
 .row_labels a:visited {color: <?php echo $anchor_visited_color_header ?>; text-decoration: none; font-weight: normal}
 .row_labels a:hover   {color: <?php echo $anchor_hover_color_header ?>;   text-decoration: underline; font-weight: normal}
@@ -543,7 +550,7 @@ tr.row_highlight td.new {background-color: <?php echo $row_highlight_color ?>} /
 // stop the header links changing colour.
 ?>
 
-.dwm_main tbody tr:hover a:link,    td.row_labels_hover a:link    {color: <?php echo $anchor_link_color ?>}
+.dwm_main tbody tr:hover a:link,    td.row_labels_hover a:link    {color: #FFF;/*<?php echo $anchor_link_color ?>*/}
 .dwm_main tbody tr:hover a:visited, td.row_labels_hover a:visited {color: <?php echo $anchor_link_color ?>}
 <?php // Disable the highlighting when we're in resize mode ?>
 .resizing .dwm_main tr.even_row td:hover.new {background-color: <?php echo $row_even_color ?>}
@@ -1482,3 +1489,18 @@ padding-bottom: 6px;
 vertical-align: middle;
 }
 
+.dwm_main td.I:hover{
+/*linear-gradient(to bottom, #458cc6 0%,#0062b2 100%);*/
+/*-webkit-box-shadow: 0px 0px 8px 3px rgba(30,144,255,1);
+-moz-box-shadow: 0px 0px 8px 3px rgba(30,144,255,1);
+box-shadow: 0px 0px 8px 3px rgba(30,144,255,1);*/
+border: solid 1px #0000FF;
+}
+
+table.dwm_main td.I:hover{
+color: #FFF;
+}
+
+table.dwm_main td.I{
+background: linear-gradient(to bottom, #458cc6 0%,#0062b2 100%);
+}

@@ -78,7 +78,7 @@ function print_header_site_info()
     // Suppress error messages in case the logo is a URL and allow_url_fopen
     // is not enabled in php.ini
     $logo_size = @getimagesize($mrbs_company_logo);
-    echo "<img src=\"$mrbs_company_logo\" style=\"vertical-align: middle;\" height=\"50\" alt=\"$mrbs_company\">\n";
+    echo "<a href=\"https://www.ing.unlp.edu.ar\" ><img src=\"$mrbs_company_logo\" style=\"vertical-align: middle;\" height=\"50\" alt=\"$mrbs_company\"></a>\n";
     echo "<a href=\"https://www.ing.unlp.edu.ar/sitio/aulas\">&nbsp;&nbsp;&nbsp;&nbsp;".get_vocab("mrbs")."</a>";
   }
   if (!empty($mrbs_company_url))
