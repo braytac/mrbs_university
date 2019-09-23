@@ -9,7 +9,8 @@ namespace MRBS;
 $body_background_color          = "#e7ebee";    // background colour for the main body
 $standard_font_color            = "#0B263B";    // default font color
 $header_font_color              = "#ffffff";    // font color for text in headers
-$highlight_font_color           = "#ff0066";    // used for highlighting text (eg links, errors)
+//$highlight_font_color           = "#ff0066";    // used for highlighting text (eg links, errors)
+$highlight_font_color           = "#00A2FF";    // used for highlighting text (eg links, errors)
 $colour_key_font_color          = $standard_font_color;    // used in the colour key table
 
 $banner_back_color              = "#4b667b";    // background colour for banner
@@ -54,6 +55,7 @@ $site_faq_entry_border_color    = "#C3CCD3";              // used to separate in
 $trailer_border_color           = $standard_font_color;
 
 $anchor_link_color              = $standard_font_color;        // link color
+//$anchor_link_color              = "#FFF";        // link color
 $anchor_visited_color           = $anchor_link_color;          // link color (visited)
 $anchor_hover_color             = $highlight_font_color;       // link color (hover)
 

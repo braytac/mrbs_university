@@ -1504,3 +1504,32 @@ color: #FFF;
 table.dwm_main td.I{
 background: linear-gradient(to bottom, #458cc6 0%,#0062b2 100%);
 }
+
+.dwm_main tbody a{
+color: #FFF;
+}
+table.calendar tbody th,
+table.calendar tbody td{
+font-size: 12px;
+}
+table#colour_key td.I{
+text-align: center;
+background: linear-gradient(to bottom, #458cc6 0%,#0062b2 100%);
+color: #FFF;
+}
+table#colour_key td.E{
+text-align: center; 
+}
+
+.dwm_main tbody td.I a{
+color: #E5E5E5;
+}
+.dwm_main tbody td.E a{
+color: black;
+}
+.dwm_main tbody td.I div:hover,
+.dwm_main tbody td.I a:hover,
+.dwm_main tbody td.I:hover{
+color: #FFF;
+}
+
